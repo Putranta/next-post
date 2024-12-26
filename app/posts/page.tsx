@@ -17,8 +17,8 @@ const posts = async () => {
   });
   const posts: Iposts[] = await response.json();
   return (
-    <div className="grid grid-rows items-center justify-items-center min-h-screen p-8 pb-20 gap-6 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1>Posts</h1>
+    <div className="grid grid-rows justify-items-center p-8 pb-20 gap-6 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <h1 className="text-2xl"> Posts List</h1>
       {posts.map((post) => {
         return (
           <CardList key={post.id}>
